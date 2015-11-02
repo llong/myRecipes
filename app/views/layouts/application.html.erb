@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Workspace</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header class="navbar navbar-fixed-top navbar-default">
+  <div class="container">
+    <%= link_to "myRecipes", "", class: "btn btn-lrg btn-success", id: "logo" %>
+    <ul class="nav nav-pills pull-right">
+      <li>
+        <%= link_to "link 1", ""%>
+      </li>
+      <li>
+        <%= link_to "link 1", ""%>
+      </li>
+      <li>
+        <%= link_to "link 1", ""%>
+      </li>
+    </ul>
+  </div>
+</header>
+<%= yield %>
+<footer class="navbar navbar-fixed-bottom navbar-default">
+  <div class="container">
+  <p>&copy; MyRecipes <%= Date.current.year %></p>
+  </div>
+</footer>
+</body>
+</html>
